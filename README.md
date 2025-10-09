@@ -74,11 +74,11 @@ By combining **LoRA fine-tuning, IP-Adapter, ReActor FaceSwap, and RealESRGAN + 
 
 | SM Woman Style | YG Woman Style | JYP Woman Style |
 |:--:|:--:|:--:|
-| ![SM Result](results/sm_output.png) | ![YGW Result](results/yg__woman_output.png) | ![JYP Result](results/jyp_output.png) |
+| ![SM Result](Idolization_Project/results/sm_output.png) | ![YGW Result](Idolization_Project/results/yg__woman_output.png) | ![JYP Result](Idolization_Project/results/jyp_output.png) |
 
 | YG Woman Style | Team Photo |
 |:--:|:--:|
-| ![YGM Result](results/yg__man_output.png)| ![Team](results/team_output.png) |
+| ![YGM Result](Idolization_Project/results/yg__man_output.png)| ![Team](Idolization_Project/results/team_output.png) |
 
 > Each image was generated through the final workflow: **LoRA (style) + IP-Adapter (identity) + ReActor (face swap) + RealESRGAN/CodeFormer (refinement)**.
 
