@@ -87,7 +87,7 @@ By combining **LoRA fine-tuning, IP-Adapter, ReActor FaceSwap, and RealESRGAN + 
 
 ## Repository Structure
 ```markdown
-DSL_Idolization_Project
+Idolization_Project
 ├── Dataset_Maker.ipynb
 ├── trained_lora_weights/
 │ ├── sm_woman.safetensors
