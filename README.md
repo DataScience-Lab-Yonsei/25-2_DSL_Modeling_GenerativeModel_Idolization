@@ -36,14 +36,15 @@ By combining **LoRA fine-tuning, IP-Adapter, ReActor FaceSwap, and RealESRGAN + 
 
 ### 2️⃣ IP-Adapter (FaceID Plus v2)
 
-- Injected **facial embeddings** into the diffusion process for **identity preservation**.
+- Injected facial embeddings into the diffusion process for identity preservation.
 - Ensured that individual facial features remain consistent after style transfer.
-- The FaceID Plus v2 version of IP-Adapter is optimized for **identity retention**,  
-  working robustly alongside LoRA and text-based prompts.
-- Implemented using **ComfyUI** with `ipadapter_faceid_plusv2.json`.
+- The FaceID Plus v2 version of IP-Adapter is optimized for identity retention, working robustly alongside LoRA and text-based prompts.
+- Implemented using ComfyUI, with separate workflows for each agency and gender-specific prompt configuration.
 
 📁 **Included File**
-- `workflows/ipadapter_faceid_plusv2.json`
+- `workflows`
+    - `sm_woman.json`, `yg_woman.json`, `jyp_woman.json`
+    - `sm_man.json`, `yg_man.json`, `jyp_man.json`
 
 > Conceptually, IP-Adapter acts as a *facial anchor*, preserving input identity while LoRA applies stylistic conditioning.
 
@@ -74,11 +75,11 @@ By combining **LoRA fine-tuning, IP-Adapter, ReActor FaceSwap, and RealESRGAN + 
 
 | SM Woman Style | YG Woman Style | JYP Woman Style |
 |:--:|:--:|:--:|
-| ![SM Result](Idolization_Project/results/sm_output.png) | ![YGW Result](Idolization_Project/results/yg__woman_output.png) | ![JYP Result](Idolization_Project/results/jyp_output.png) |
+| ![SM Result](Idolization_Project/results/sm_output.png) | ![YGW Result](Idolization_Project/results/yg_woman_output.png) | ![JYP Result](Idolization_Project/results/jyp_output.png) |
 
 | YG Woman Style | Team Photo |
 |:--:|:--:|
-| ![YGM Result](Idolization_Project/results/yg__man_output.png)| ![Team](Idolization_Project/results/team_output.png) |
+| ![YGM Result](Idolization_Project/results/yg_man_output.png)| ![Team](Idolization_Project/results/team_output.png) |
 
 > Each image was generated through the final workflow: **LoRA (style) + IP-Adapter (identity) + ReActor (face swap) + RealESRGAN/CodeFormer (refinement)**.
 
@@ -97,7 +98,12 @@ Idolization_Project
 │ ├── yg_man.safetensors
 │ └── jyp_man.safetensors
 ├── workflows/
-│ ├── ipadapter_faceid_plusv2.json
+│ ├── sm_woman.json
+│ ├── sm_man.json
+│ ├── yg_woman.json
+│ ├── yg_man.json
+│ ├── jyp_woman.json
+│ ├── jyp_man.json
 │ └── reactor_faceswap.json
 └── results/
 ├── sm_output.png
