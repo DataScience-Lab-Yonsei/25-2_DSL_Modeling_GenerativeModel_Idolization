@@ -77,7 +77,7 @@ By combining **LoRA fine-tuning, IP-Adapter, ReActor FaceSwap, and RealESRGAN + 
 |:--:|:--:|:--:|
 | ![SM Result](Idolization_Project/results/sm_output.png) | ![YGW Result](Idolization_Project/results/yg_woman_output.png) | ![JYP Result](Idolization_Project/results/jyp_output.png) |
 
-| YG Woman Style | Team Photo |
+| YG Man Style | Team Photo |
 |:--:|:--:|
 | ![YGM Result](Idolization_Project/results/yg_man_output.png)| ![Team](Idolization_Project/results/team_output.png) |
 
