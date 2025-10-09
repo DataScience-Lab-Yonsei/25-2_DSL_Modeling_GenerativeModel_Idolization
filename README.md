@@ -78,7 +78,7 @@ By combining **LoRA fine-tuning, IP-Adapter, ReActor FaceSwap, and RealESRGAN + 
 
 | YG Woman Style | Team Photo |
 |:--:|:--:|
-| ![YGM Result](results/yg__man_output.png)| ![Airport](results/team_output.png) |
+| ![YGM Result](results/yg__man_output.png)| ![Team](results/team_output.png) |
 
 > Each image was generated through the final workflow: **LoRA (style) + IP-Adapter (identity) + ReActor (face swap) + RealESRGAN/CodeFormer (refinement)**.
 
